@@ -10,4 +10,5 @@ Get historical weather data for Japanese prefectures from the Internet.
 
 # Warning
 This is really basic web scraping and it will break easily with a minor change in the website.
-It's probably broken by the time you use it.
+
+It's probably broken by the time you use it. (Sorry haha)
