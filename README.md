@@ -7,3 +7,8 @@ Get historical weather data for Japanese prefectures from the Internet.
 1. `pip install beautifulsoup4`
 2. `jupyter notebook`
 3. You're set to go!!
+
+# Warning
+This is really basic web scraping and it will break easily with a minor change in the website.
+
+It's probably broken by the time you use it. (Sorry haha)
