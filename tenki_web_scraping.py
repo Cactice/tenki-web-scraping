@@ -60,7 +60,7 @@ def scrape_table(tr):
 
 
 
-def scrape_tr(full_url):
+def scrape_url(full_url):
     r  = requests.get(full_url)
     data = r.content
     soup = BeautifulSoup(data, 'html.parser')
@@ -83,7 +83,7 @@ def get_climate(target_ken_name,target_date,transform=True):
     url_prefix = 'http://www.weather-eye.com/weatherchart/src/'
     url_suffix = '.htm'
     full_url = url_prefix + target_month + '_' + target_ken_id + url_suffix
-    month_obj = scrape_tr(full_url)
+    month_obj = scrape_url(full_url)
     return month_obj[target_day]
 
 
