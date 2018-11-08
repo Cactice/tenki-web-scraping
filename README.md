@@ -1,5 +1,5 @@
 # tenki-web-scraping
-Get historical weather data for Japanese prefectures from the Internet. Not for perverts.
+Get historical weather data for Japanese prefectures from the Internet.
 
 
 # Get Started
