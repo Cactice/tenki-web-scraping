@@ -13,5 +13,4 @@ Get historical weather data for Japanese prefectures from an old school Japanese
 
 # Warning
 This is really basic web scraping and it will break easily with a minor change in the website.
-
-It's probably broken by the time you use it. (Sorry haha)
+It's probably broken by the time you use it. (Check build state of Circle CI!)
