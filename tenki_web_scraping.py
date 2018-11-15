@@ -4,14 +4,14 @@ from bs4 import BeautifulSoup
 import re
 import requests
 import math
-
+from proxy_rotation import scrapy_requests
 
 
 ken = {} # ken means prefecture in Japanese
 
 def init_tenki():
     weather_url = 'http://www.weather-eye.com/weatherchart/'
-    r  = requests.get(weather_url)
+    r  = scrapy_requests(weather_url)
     data = r.content
     soup = BeautifulSoup(data, 'html.parser')
     for each in soup.find_all('a'):
@@ -61,14 +61,22 @@ def scrape_table(tr):
 
 
 def scrape_url(full_url):
-    r  = requests.get(full_url)
+    r  = scrapy_requests(full_url)
     data = r.content
     soup = BeautifulSoup(data, 'html.parser')
     body = soup.find('body')
-    table = body.findAll('table')[6]
-    tr = table.findAll('tr')
-    del tr[0]
-    return scrape_table(tr)
+    keyword = '日付'
+    table_number = 5
+    while table_number < 7: # there is a strange bug with the website and the table position changes
+        table = body.findAll('table')[table_number]
+        tr = table.findAll('tr')
+        del tr[0]
+        try:
+            scraped_table = scrape_table(tr)
+            return scraped_table
+        except:
+            table_number += 1
+    return None
 
 
 

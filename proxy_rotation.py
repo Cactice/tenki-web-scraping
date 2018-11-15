@@ -23,4 +23,4 @@ def scrapy_requests(url):
             response = requests.get(url,proxies={"http": proxy, "https": proxy})
             return response
         except:
-            print("Skipping. Connnection error")
+            print("Skipping. Connnection error: #%d"%i)
