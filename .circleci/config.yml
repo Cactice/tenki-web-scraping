@@ -48,7 +48,8 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python manage.py test
+            python demo.py test
+            codecov
           no_output_timeout: 10s
       - store_artifacts:
           path: test-reports
