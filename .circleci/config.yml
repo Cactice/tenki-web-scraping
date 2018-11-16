@@ -51,7 +51,7 @@ jobs:
             sudo pip install codecov
             sudo pip install coverage
             python demo.py
-            coverage run tests.py
+            coverage run -m tests.py
           no_output_timeout: 10s
       - store_artifacts:
           path: test-reports
