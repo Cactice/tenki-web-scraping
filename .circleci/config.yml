@@ -47,7 +47,6 @@ jobs:
       - run:
           name: run tests
           command: |
-            virtualenv venv
             . venv/bin/activate
             pip install codecov
             python demo.py
