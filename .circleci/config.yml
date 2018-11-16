@@ -49,7 +49,7 @@ jobs:
           command: |
             . venv/bin/activate
             sudo pip install codecov
-            sudo pip install coverage
+            python why.py
             python demo.py
             coverage run -m tests.py
           no_output_timeout: 10s
