@@ -48,7 +48,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            pip install --user codecov
+            sudo pip install --user codecov
             coverage run tests.py
           no_output_timeout: 10s
       - store_artifacts:
