@@ -52,7 +52,7 @@ jobs:
             python why.py
             python demo.py
             coverage run -m tests.py
-          no_output_timeout: 10s
+          no_output_timeout: 30s
       - store_artifacts:
           path: test-reports
           destination: test-reports
