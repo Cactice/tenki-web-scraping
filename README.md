@@ -1,6 +1,7 @@
 # tenki-web-scraping
 [![CircleCI](https://circleci.com/gh/Cactice/tenki-web-scraping.svg?style=svg)](https://circleci.com/gh/Cactice/tenki-web-scraping)<br>
 [![codecov](https://codecov.io/gh/Cactice/tenki-web-scraping/branch/master/graph/badge.svg)](https://codecov.io/gh/Cactice/tenki-web-scraping)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <br>
 Get historical weather data for Japanese prefectures from an old school Japanese website<br>
 (http://www.weather-eye.com/weatherchart/)
