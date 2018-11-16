@@ -7,6 +7,7 @@ Get historical weather data for Japanese prefectures from an old school Japanese
 (http://www.weather-eye.com/weatherchart/)
 
 
+
 # Get Started
 0. `git clone https://github.com/Cactice/tenki-web-scraping && cd tenki-web-scraping`
 1. `pip install requirements.txt`
@@ -16,3 +17,5 @@ Get historical weather data for Japanese prefectures from an old school Japanese
 # Warning
 This is really basic web scraping and it will break easily with a minor change in the website.
 It's probably broken by the time you use it. (Check build state of Circle CI!)
+
+[![codecov](https://codecov.io/gh/Cactice/tenki-web-scraping/branch/master/graphs/sunburst.svg)](https://codecov.io/gh/Cactice/tenki-web-scraping)
