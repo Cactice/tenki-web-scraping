@@ -1,7 +1,6 @@
 [run]
 branch = True
-source= tenki-web-scraping
-
+source = .
 [report]
 exclude_lines =
     if self.debug:
