@@ -1,5 +1,6 @@
 [run]
 branch = True
+source= tenki-web-scraping
 
 [report]
 exclude_lines =

@@ -51,6 +51,7 @@ jobs:
             pip install codecov
             python demo.py
             coverage run tests.py
+            codecov
           no_output_timeout: 30s
       - store_artifacts:
           path: test-reports
