@@ -15,7 +15,7 @@ Get historical weather data for Japanese prefectures from an old school Japanese
 3. You're set to go!!
 
 # Warning
-This is really basic web scraping and it will break easily with a minor change in the website.
+This is a really basic web scraping tool and it will break easily with a minor change in the website.
 It's probably broken by the time you use it. (Check build state of Circle CI!)
 
 [![codecov](https://codecov.io/gh/Cactice/tenki-web-scraping/branch/master/graphs/sunburst.svg)](https://codecov.io/gh/Cactice/tenki-web-scraping)
