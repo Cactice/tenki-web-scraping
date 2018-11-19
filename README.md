@@ -11,7 +11,7 @@ Get historical weather data for Japanese prefectures from an old school Japanese
 # Get Started
 0. `git clone https://github.com/Cactice/tenki-web-scraping && cd tenki-web-scraping`
 1. `pip install requirements.txt`
-2. `jupyter notebook` or `manage.py`
+2. `jupyter notebook tenki_web_scraping.ipynb` or `manage.py`
 3. You're set to go!!
 
 # Warning
